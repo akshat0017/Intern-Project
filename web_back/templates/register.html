@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+    </head>
+    <body>
+        <div class="login-form-container">
+    
+            <div id="close-login-btn" class="fas fa-times"></div>
+        
+            <form method="POST" action=" ">
+                {% csrf_token %}
+                <h3>sign in</h3>
+                <span>username</span>
+                <input type="text" name="username" class="box" placeholder="enter your username" id="">
+                <span>password</span>
+                <input type="password" name="password" class="box" placeholder="enter your password" id="">
+ 
+                <input type="submit" value="sign up" class="btn">
+            </form>
+        
+        </div>
+        
+    </body>
+</html>
