@@ -1,4 +1,4 @@
-<script>
+
         searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () =>{
@@ -159,4 +159,4 @@ var swiper = new Swiper(".blogs-slider", {
     },
   },
 });
-    </script>
+    

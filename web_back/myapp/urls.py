@@ -1,9 +1,10 @@
-from django.contrib import admin
-from django.urls import path, include
-from myapp import views
-
+from django.urls import path
+from .views import  CustomLoginView, RegisterPage, index
+from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
-    path('index/',views.index, name="index"),
-    path('register/', views.register, name="register")
+    path('login/', CustomLoginView.as_view(), name='login'),
+    path('logout/', LogoutView.as_view(next_page='login'), name='logout'),
+    path('register/', RegisterPage.as_view(), name='register'),
+    path('', index, name='home'),
 ]
