@@ -13,7 +13,7 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
-
+from django.views.generic import TemplateView
 
 
 class CustomLoginView(LoginView):
@@ -43,6 +43,6 @@ class RegisterPage(FormView):
 
 # Create your views here.
 
-def index(request):
-    return render(request, "faltu.html")
+class index(LoginRequiredMixin,TemplateView):
+    template_name = "faltu.html"
 
