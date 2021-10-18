@@ -3,7 +3,7 @@
 
 :root{
     --green:#27ae60;
-    --dark-color:#219150;
+    --dark-color:#218150;
     --black:#444;
     --light-color:#666;
     --border:.1rem solid rgba(0,0,0,.1);
@@ -23,14 +23,14 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 68.5%;
     overflow-x: hidden;
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar{
-    width:1rem;
+    width:1.5rem;
 }
 
 html::-webkit-scrollbar-track{
